@@ -1,0 +1,105 @@
+@import url("main.css");
+
+div.login-form {
+    /* background: tomato; */
+    width: 50%;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+a.forgot-link-href {
+    color: #f8f8f8 !important;
+    text-decoration: none;
+}
+div.login-form h1 {
+    text-align: center;
+    color: #f8f8f8;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+div.form-header {
+    /* background: green; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+}
+div.login, div.register {
+    text-align: center;
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    padding: 1vh;
+    font-weight: bold;
+    color: #f8f8f8;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+div.login:hover, div.register:hover {
+    cursor: pointer;
+}
+div.form-body {
+    /* background: tomato; */
+    width: 100%;
+    height: auto;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    position: relative;
+}
+.margin-top {
+    margin-top: 1vh !important;
+}
+.margin-bottom {
+    margin-bottom: 1vh !important;
+}
+div.form-login-section input, div.form-register-section input {
+    width: 95%;
+    outline: none;
+    padding: 2vh;
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    background-color: #bbb;
+    color: #444;
+    text-align: center;
+}
+div.form-login-section input[type=submit], div.form-register-section input[type=submit] {
+    color:#222;
+    background-color: lightseagreen;
+    font-weight: bold;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+
+}
+p.alert-box {
+    color: #f8f8f8;
+    text-align: center;
+    -webkit-text-decoration: line;
+            text-decoration: line;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    -webkit-text-decoration-color: seagreen;
+            text-decoration-color: seagreen;
+    text-decoration-thickness: 2px;
+}
+div.form-login-section input[type=submit]:hover, div.form-register-section input[type=submit]:hover {
+    cursor: pointer;
+}
+.hidden-forms {
+    display: none !important;
+}
+@media only screen and (max-width: 600px) {
+    div.login-form {
+        width: 98% ;
+    }
+}

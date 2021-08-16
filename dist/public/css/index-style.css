@@ -1,0 +1,109 @@
+@import url('./main.css');
+form {
+    position: absolute;
+    /* background: green; */
+    padding: 5px;
+    width: 99%;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 3vh auto;
+    overflow: hidden;
+}
+main h1 {
+    color: #f8f8f8;
+    text-shadow: 2px 2px 6px rgba(134, 62, 62, 0.3);
+}
+form input[type=text] {
+    -webkit-box-flex: 70%;
+        -ms-flex: 70%;
+            flex: 70%;
+    margin-right: 10px;
+}
+form input[type=submit] {
+    -webkit-box-flex: 25%;
+        -ms-flex: 25%;
+            flex: 25%;
+    display: block;
+    padding: 1vh;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    background-color: lightseagreen;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #111;
+    -webkit-transition: ease-in-out 0.35s all;
+    -o-transition: ease-in-out 0.35s all;
+    transition: ease-in-out 0.35s all;
+}
+form input[type=submit]:hover {
+    cursor: pointer;
+    background-color: royalblue;
+    color: #f8f8f8;
+}
+form input {
+    outline: none !important;
+    border: none !important;
+    height: 5vh;
+    padding: 1vh;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+div.master-short-link {
+    width: 100%;
+    position: relative;
+    /* background: tomato; */
+    margin-top: 25vh;
+    height: 15vh;
+    overflow: hidden;
+}
+div.short-link-message {
+    /* background: tomato; */
+    position: absolute;
+    color: #f8f8f8;
+    /* margin-top: 25vh; */
+    width: 105%;
+    height: 120%;
+    overflow-x: scroll;
+}
+div.short-link-message h2 {
+    color: aqua;
+}
+@media only screen and (max-width: 550px) {
+    form {
+        /* background: tomato !important; */
+        -ms-flex-wrap: wrap !important;
+            flex-wrap: wrap !important;
+    }
+    form input[type=text] {
+        margin: 5px auto;
+    }
+    form input {
+        -webkit-box-flex: 100% !important;
+            -ms-flex: 100% !important;
+                flex: 100% !important;
+        width: 100%;
+        display: block !important;
+        margin: 1vh auto;
+    }
+    div.short-link-message h2 {
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 470px) {
+    main h1 {
+        font-size: 1.5em !important;
+    }
+}
